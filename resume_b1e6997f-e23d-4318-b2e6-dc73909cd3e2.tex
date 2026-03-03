@@ -1,0 +1,191 @@
+%-------------------------
+% Resume in Latex
+% Author : Aditya Jaiswal
+% Optimization : Compact Spacing for 1-Page Limit
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Standardize margins - SLIGHTLY TIGHTER
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in} 
+\addtolength{\textheight}{1.1in} 
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - AGGRESSIVE COMPRESSION
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{itemize}[leftmargin=0in, label={}]
+      \item
+      \textbf{#1} \hfill #2 \\
+      \textit{\small#3} \hfill \textit{\small #4} \\
+    \end{itemize}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{itemize}[leftmargin=0in, label={}]
+        \item
+      \small\textbf{#1} \hfill #2 \\
+    \end{itemize}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Adjusted list spacing to remove vertical gaps
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-1pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt]} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aditya Jaiswal} \\ \vspace{2pt}
+    \small +91 8177984057 $|$ \href{mailto:adityajaiswal.codes@gmail.com}{\underline{adityajaiswal.codes@gmail.com}} \\ \vspace{2pt}
+    % HIDDEN LINKS - Clean look, saves space
+    \href{https://www.linkedin.com/in/adityajaiswal1/}{\underline{linkedin.com/in/adityajaiswal1}} $|$
+    \href{https://github.com/AdityaCJaiswal}{\underline{github.com/AdityaCJaiswal}} $|$
+    \href{https://adityacjaiswal.github.io/}{\underline{adityacjaiswal.github.io/}} $|$
+    \href{https://leetcode.com/u/Adityacjaiswal/}{\underline{LeetCode}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Profile Summary}
+ \resumeSubHeadingListStart
+   \small{\item{
+     Highly technical Full Stack Developer with AWS \& OCI certifications, adept at diagnosing complex system issues and implementing robust solutions. Proven ability to leverage MERN stack, Python, and cloud-native architectures to enhance product functionality and user experience. Experienced in developing scalable, containerized applications and AI systems, ready to provide expert technical support and drive customer success in a SaaS environment.
+   }}
+ \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shri Ramdeobaba College of Engineering and Management}{Nagpur, India}
+      {Bachelor of Technology in Information Technology}{Exp. May 2027}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Operating Systems, DBMS, OOPs, Computer Networks, AI, Cloud Computing.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS & ACHIEVEMENTS-----------
+\section{Certifications \& Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     % Tier 1: Professional Certifications (Isolated for Impact)
+     \textbf{AWS Certified Cloud Practitioner} \hfill \textit{Amazon Web Services (AWS)} \\
+     \textbf{Oracle Cloud Infrastructure (OCI) 2025 Certified Foundations Associate} \hfill \textit{Oracle} \\
+     
+     % Tier 2: Competitions & Assessments (Grouped)
+     \textbf{Global Recognition}{: Top 20\% (Stage 1), AlgoUniversity Tech Fellowship (20k+ Applicants).} \\
+     \textbf{National Honors}{: National Semi-Finalist, Tata Imagination Challenge 2024.} \\
+     \textbf{Assessments}{: 94.5 Percentile in Naukri Campus Young Turks; 6th Rank in RUBIREX Speedcubing.}
+    }}
+ \end{itemize}
+ 
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java (Core/Adv), C/C++, JavaScript (ES6+), Python, SQL (Postgres), HTML5/CSS3} \\ \vspace{2pt}
+     \textbf{Frontend}{: React.js, Next.js, Redux Toolkit, Tailwind CSS, Material UI, Responsive Design} \\ \vspace{2pt}
+     \textbf{Backend}{: Node.js, Express.js, Spring Boot, Django, RESTful APIs, Microservices} \\ \vspace{2pt}
+     \textbf{Cloud \& Tools}{: AWS (EC2, S3, Lambda), OCI, Docker, CI/CD, Linux, Git/GitHub, Supabase, Redis} \\ \vspace{2pt}
+     \textbf{AI/ML}{: RAG, FAISS, LangChain, TensorFlow, Pandas, NumPy}
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Technical Projects}
+    \resumeSubHeadingListStart
+         \resumeProjectHeading
+    {StreamStudio $|$ \emph{Flask, React, Docker, FFmpeg, MongoDB}}{Jan. 2026}
+    \resumeItemListStart
+        \resumeItem{Engineered a high-performance broadcast tool, achieving sub-200ms latency, demonstrating strong technical problem-solving and optimization skills critical for SaaS product reliability.}\resumeItem{Developed a custom MJPEG pipeline, bypassing HLS, showcasing innovative solution design and deep technical understanding of video streaming protocols.}\resumeItem{Implemented a React dashboard with MongoDB backend, providing a robust user interface for managing complex video engine operations and ensuring seamless customer interaction.}
+    \resumeItemListEnd
+    
+      \resumeProjectHeading
+          {Redline AI $|$ \emph{Django, React, FAISS, LLM, RAG}}{Nov 2025}
+          \resumeItemListStart
+            \resumeItem{Developed an offline RAG system for legal risk detection, demonstrating advanced AI/ML technical aptitude and structured problem-solving in complex data environments.}\resumeItem{Optimized FAISS vector search by 40\%, significantly enhancing system efficiency and showcasing a solution-oriented approach to performance bottlenecks.}\resumeItem{Managed Docker deployment for the AI system, ensuring reliable and scalable operation, a key skill for supporting SaaS product infrastructures.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+    {\textbf{Smart Product Pricing (Amazon ML Challenge)} $|$ \emph{Python, LightGBM, CNN, OpenCV}}{Oct 2025}
+    \resumeItemListStart
+        \resumeItem{Constructed a multimodal ML pipeline utilizing CNNs and OCR for visual data processing, showcasing expertise in complex technical systems and data interpretation.}\resumeItem{Optimized LightGBM models to enhance predictive accuracy and efficiency, reflecting a strong solution-oriented mindset in technical problem-solving.}\resumeItem{Managed large-scale dataset processing, demonstrating the ability to handle robust data operations and ensure data integrity for critical applications.}
+    \resumeItemListEnd
+    
+      \resumeProjectHeading
+          {Adaptive Learn $|$ \emph{React, Node.js, Supabase, TensorFlow}}{June 2025 -- July 2025}
+          \resumeItemListStart
+            \resumeItem{Developed an AI educational platform, integrating the YouTube Data API to enhance content delivery and user experience, demonstrating strong technical integration skills.}\resumeItem{Implemented predictive modeling that increased user engagement by 25\%, showcasing a data-driven approach to improving product outcomes and customer satisfaction.}\resumeItem{Utilized Supabase real-time database and OAuth for secure and dynamic platform functionality, highlighting proficiency in modern web technologies and robust system design.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Colosseum 2024 (Departmental Fest)}{Nagpur, India}
+      {Technical Co-head}{2024 -- 2025}
+      \resumeItemListStart
+        \resumeItem{Led a team of 5 developers in creating an event platform, fostering cross-functional collaboration and ensuring project milestones were met with high quality.}\resumeItem{Managed critical platform logistics, achieving 99.9\% uptime, directly contributing to exceptional customer experience and reliability for high-value events.}\resumeItem{Demonstrated strong ownership in overseeing platform operations, proactively identifying and resolving potential issues to maintain continuous service delivery.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

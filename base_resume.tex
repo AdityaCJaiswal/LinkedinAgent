@@ -1,0 +1,191 @@
+%-------------------------
+% Resume in Latex
+% Author : Aditya Jaiswal
+% Optimization : Compact Spacing for 1-Page Limit
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Standardize margins - SLIGHTLY TIGHTER
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in} 
+\addtolength{\textheight}{1.1in} 
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - AGGRESSIVE COMPRESSION
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{itemize}[leftmargin=0in, label={}]
+      \item
+      \textbf{#1} \hfill #2 \\
+      \textit{\small#3} \hfill \textit{\small #4} \\
+    \end{itemize}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{itemize}[leftmargin=0in, label={}]
+        \item
+      \small\textbf{#1} \hfill #2 \\
+    \end{itemize}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Adjusted list spacing to remove vertical gaps
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-1pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt]} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aditya Jaiswal} \\ \vspace{2pt}
+    \small +91 8177984057 $|$ \href{mailto:adityajaiswal.codes@gmail.com}{\underline{adityajaiswal.codes@gmail.com}} \\ \vspace{2pt}
+    % HIDDEN LINKS - Clean look, saves space
+    \href{https://www.linkedin.com/in/adityajaiswal1/}{\underline{linkedin.com/in/adityajaiswal1}} $|$
+    \href{https://github.com/AdityaCJaiswal}{\underline{github.com/AdityaCJaiswal}} $|$
+    \href{https://adityacjaiswal.github.io/}{\underline{adityacjaiswal.github.io/}} $|$
+    \href{https://leetcode.com/u/Adityacjaiswal/}{\underline{LeetCode}}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Profile Summary}
+ \resumeSubHeadingListStart
+   \small{\item{
+     %%%SUMMARY_PLACEHOLDER%%%
+   }}
+ \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shri Ramdeobaba College of Engineering and Management}{Nagpur, India}
+      {Bachelor of Technology in Information Technology}{Exp. May 2027}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Data Structures \& Algorithms, Operating Systems, DBMS, OOPs, Computer Networks, AI, Cloud Computing.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS & ACHIEVEMENTS-----------
+\section{Certifications \& Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     % Tier 1: Professional Certifications (Isolated for Impact)
+     \textbf{AWS Certified Cloud Practitioner} \hfill \textit{Amazon Web Services (AWS)} \\
+     \textbf{Oracle Cloud Infrastructure (OCI) 2025 Certified Foundations Associate} \hfill \textit{Oracle} \\
+     
+     % Tier 2: Competitions & Assessments (Grouped)
+     \textbf{Global Recognition}{: Top 20\% (Stage 1), AlgoUniversity Tech Fellowship (20k+ Applicants).} \\
+     \textbf{National Honors}{: National Semi-Finalist, Tata Imagination Challenge 2024.} \\
+     \textbf{Assessments}{: 94.5 Percentile in Naukri Campus Young Turks; 6th Rank in RUBIREX Speedcubing.}
+    }}
+ \end{itemize}
+ 
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java (Core/Adv), C/C++, JavaScript (ES6+), Python, SQL (Postgres), HTML5/CSS3} \\ \vspace{2pt}
+     \textbf{Frontend}{: React.js, Next.js, Redux Toolkit, Tailwind CSS, Material UI, Responsive Design} \\ \vspace{2pt}
+     \textbf{Backend}{: Node.js, Express.js, Spring Boot, Django, RESTful APIs, Microservices} \\ \vspace{2pt}
+     \textbf{Cloud \& Tools}{: AWS (EC2, S3, Lambda), OCI, Docker, CI/CD, Linux, Git/GitHub, Supabase, Redis} \\ \vspace{2pt}
+     \textbf{AI/ML}{: RAG, FAISS, LangChain, TensorFlow, Pandas, NumPy}
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Technical Projects}
+    \resumeSubHeadingListStart
+         \resumeProjectHeading
+    {StreamStudio $|$ \emph{Flask, React, Docker, FFmpeg, MongoDB}}{Jan. 2026}
+    \resumeItemListStart
+        %%%STREAMSTUDIO_BULLETS%%%
+    \resumeItemListEnd
+    
+      \resumeProjectHeading
+          {Redline AI $|$ \emph{Django, React, FAISS, LLM, RAG}}{Nov 2025}
+          \resumeItemListStart
+            %%%REDLINE_BULLETS%%%
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+    {\textbf{Smart Product Pricing (Amazon ML Challenge)} $|$ \emph{Python, LightGBM, CNN, OpenCV}}{Oct 2025}
+    \resumeItemListStart
+        %%%AMAZON_ML_BULLETS%%%
+    \resumeItemListEnd
+    
+      \resumeProjectHeading
+          {Adaptive Learn $|$ \emph{React, Node.js, Supabase, TensorFlow}}{June 2025 -- July 2025}
+          \resumeItemListStart
+            %%%ADAPTIVE_LEARN_BULLETS%%%
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Colosseum 2024 (Departmental Fest)}{Nagpur, India}
+      {Technical Co-head}{2024 -- 2025}
+      \resumeItemListStart
+        %%%COLOSSEUM_BULLETS%%%
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
